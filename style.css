@@ -208,3 +208,39 @@
     opacity: 1;
     transform: translateX(100%);
 }
+/* ----------------- Media queries -----------------*/
+@media screen and (width <= 550px) {
+    .background-container {
+        background-position: -390px 0;
+    }
+    .list-container {
+        top: 10px;
+        width: 90%;
+    }
+    .title {
+        top: 0;
+        width: 90%;
+        font-size: 25px;
+    }
+    .artist-name {
+        overflow: hidden;   
+        white-space: nowrap; /* Evita que el texto se envuelva */
+        text-overflow: ellipsis;
+        padding-right: 10px;
+    }
+    .send-button {
+        width: 0;
+        height: 0;
+    }
+    .share-i {
+        opacity: 0;
+    }
+    .send-options {
+        position: relative;
+        top: -25px;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+        opacity: 1; 
+    }
+}
